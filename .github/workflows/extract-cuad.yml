@@ -1,0 +1,40 @@
+name: Refresh CUAD clauses
+
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - 'scripts/extract_cuad.py'
+      - '.github/workflows/extract-cuad.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: pip
+
+      - name: Install datasets
+        run: pip install --quiet datasets
+
+      - name: Run extraction
+        run: python scripts/extract_cuad.py
+
+      - name: Commit clauses.json if changed
+        run: |
+          if git diff --quiet public/clauses.json; then
+            echo "No changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/clauses.json
+          git commit -m "Refresh CUAD clauses (automated)"
+          git push

@@ -1,15 +1,21 @@
 #!/usr/bin/env python3
 """Extract a small, deduped subset of CUAD-QA into public/clauses.json.
 
-CUAD-QA (theatticusproject/cuad-qa) is a SQuAD-style QA dataset built from
-510 commercial contracts annotated by lawyers. Each row is (contract,
-question, answers); the question encodes the clause category, e.g.
+Source: chenghao/cuad_qa on Hugging Face, a parquet-backed mirror of CUAD
+(Contract Understanding Atticus Dataset; 510 commercial contracts annotated
+by lawyers across 41 clause categories). The mirror is used instead of the
+official `theatticusproject/cuad-qa` because the latter ships a Python
+loading script that requires `trust_remote_code=True` and is not exposed
+via the HF Dataset Viewer.
 
-    Highlight the parts (if any) of this contract related to "Anti-Assignment"
-    that should be reviewed by a lawyer. Details: ...
+Schema: each row has `question` (the bare category label, e.g.
+"Anti-Assignment"), `answers.text` (list of labeled spans), and `title`
+(contract filename). Many rows have empty answers — that simply means the
+category was not present in that contract.
 
 We keep up to MAX_PER_CATEGORY non-empty answers per category, capped at
-MAX_EXCERPT_CHARS, and write them to public/clauses.json with stable ids.
+MAX_EXCERPT_CHARS chars, and write them to public/clauses.json with stable
+sha1-derived ids.
 
 Run:
     pip install datasets
@@ -60,9 +66,15 @@ def stable_id(category: str, title: str, excerpt: str) -> str:
 
 
 def extract_category(question: str) -> str | None:
-    """CUAD question format: '... related to "X" that should be reviewed ...'."""
+    """Accept either the trimmed mirror format (bare category) or the
+    original CUAD-QA prompt ('... related to "X" that should be ...').
+    """
+    if not question:
+        return None
     match = re.search(r'related to\s+"([^"]+)"', question)
-    return match.group(1) if match else None
+    if match:
+        return match.group(1)
+    return question.strip()
 
 
 def looks_like_dup(existing: list[dict], excerpt: str) -> bool:
@@ -106,8 +118,8 @@ def main() -> int:
         print("ERROR: `datasets` not installed. Run: pip install datasets", file=sys.stderr)
         return 1
 
-    print("Loading CUAD-QA ...", file=sys.stderr)
-    ds = load_dataset("theatticusproject/cuad-qa", split="train")
+    print("Loading chenghao/cuad_qa (parquet mirror of CUAD-QA) ...", file=sys.stderr)
+    ds = load_dataset("chenghao/cuad_qa", split="train")
 
     wanted = set(CUAD_CATEGORIES_WE_USE)
     by_cat: dict[str, list[dict]] = {}

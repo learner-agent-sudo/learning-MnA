@@ -61,6 +61,11 @@ pip install datasets
 python scripts/extract_cuad.py
 ```
 
-The script downloads `theatticusproject/cuad-qa` from Hugging Face and
-writes deduped excerpts to `public/clauses.json`. It needs network access
-to `huggingface.co`; run it on a machine that can reach the Hub.
+The script downloads `chenghao/cuad_qa` (a parquet mirror of CUAD-QA)
+from Hugging Face and writes deduped excerpts to `public/clauses.json`.
+It needs network access to `huggingface.co`.
+
+A GitHub Actions workflow at `.github/workflows/extract-cuad.yml`
+performs the same extraction on demand (`workflow_dispatch`) or when the
+script changes, and commits the result back to the branch. Trigger it
+from the Actions tab in the GitHub UI when you want a fresh pull.
