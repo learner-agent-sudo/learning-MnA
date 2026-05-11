@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useMemo, useState } from 'react';
 import { STAGES, STAGE_BY_ID, Depth, DealType } from '@/lib/workflow';
 import { WorkflowDiagram } from '@/components/WorkflowDiagram';
@@ -36,6 +37,12 @@ export default function Page() {
         <div className="flex flex-wrap items-center gap-3">
           <DealTypeSelector dealType={dealType} onChange={setDealType} />
           <DepthToggle depth={depth} onChange={setDepth} />
+          <Link
+            href="/about"
+            className="text-sm text-muted hover:text-ink hover:underline"
+          >
+            About
+          </Link>
         </div>
       </header>
 
@@ -64,6 +71,14 @@ export default function Page() {
           )}
         </section>
       </div>
+
+      <footer className="mt-12 border-t border-slate-200 pt-4 text-xs text-muted">
+        Educational visualizer — not legal advice.{' '}
+        <Link href="/about" className="hover:underline">
+          Sources &amp; disclaimer
+        </Link>
+        .
+      </footer>
     </main>
   );
 }
