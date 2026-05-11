@@ -7,14 +7,15 @@ import { StagePanel } from '@/components/StagePanel';
 import { DepthToggle } from '@/components/DepthToggle';
 import { DealTypeSelector } from '@/components/DealTypeSelector';
 
-// Vertical slice: only the DD stage is interactive. Fan-out to all 9 lands
-// in a follow-up commit after sign-off.
-const ENABLED_STAGE_IDS = new Set<string>(['dd']);
-
 export default function Page() {
   const [depth, setDepth] = useState<Depth>('beginner');
   const [dealType, setDealType] = useState<DealType>('apa');
-  const [selectedStageId, setSelectedStageId] = useState<string | null>('dd');
+  const [selectedStageId, setSelectedStageId] = useState<string | null>('strategy');
+
+  const enabledStageIds = useMemo(
+    () => new Set(STAGES.filter((s) => s.dealTypes.includes(dealType)).map((s) => s.id)),
+    [dealType]
+  );
 
   const stages = useMemo(
     () => STAGES.filter((s) => s.dealTypes.includes(dealType)),
@@ -43,12 +44,13 @@ export default function Page() {
           <WorkflowDiagram
             stages={stages}
             selectedStageId={selectedStageId}
-            enabledStageIds={ENABLED_STAGE_IDS}
+            enabledStageIds={enabledStageIds}
             onSelectStage={setSelectedStageId}
           />
           <p className="mt-3 text-xs text-muted">
-            Vertical slice: only <strong>Due Diligence</strong> is clickable.
-            Other stages are stubbed and will activate in the next iteration.
+            Click any stage for documents, clauses, and glossary. SPA and
+            Merger paths are coming soon — APA is the only complete deal
+            type in v1.
           </p>
         </section>
 
