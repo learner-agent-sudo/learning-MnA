@@ -1,26 +1,338 @@
 [
   {
-    "id": "cuad-anti-assignment",
-    "category": "Anti-Assignment",
-    "contract_title": "STUB-MarketingAgreement.pdf",
-    "contract_type": "Marketing Agreement",
-    "excerpt": "Neither party may assign this Agreement, in whole or in part, without the prior written consent of the other party, and any purported assignment without such consent shall be null and void; provided, however, that either party may assign this Agreement to an Affiliate or to a successor in connection with a merger, consolidation, or sale of substantially all of its assets to which this Agreement relates.",
+    "id": "cuad-governing-law-419267a364",
+    "category": "Governing Law",
+    "contract_title": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT",
+    "excerpt": "This Agreement is to be construed according to the laws          of the State of Illinois.",
     "source": "cuad"
   },
   {
-    "id": "cuad-change-of-control",
-    "category": "Change Of Control",
-    "contract_title": "STUB-SupplyAgreement.pdf",
-    "contract_type": "Supply Agreement",
-    "excerpt": "In the event of a Change of Control of Supplier (defined as any transaction or series of related transactions resulting in any Person or group acquiring beneficial ownership of more than 50% of the voting securities of Supplier), Customer may, upon 30 days' written notice, terminate this Agreement without further liability.",
-    "source": "cuad"
-  },
-  {
-    "id": "cuad-mfn",
-    "category": "Most Favored Nation",
-    "contract_title": "STUB-DistributionAgreement.pdf",
+    "id": "cuad-governing-law-e4a5a4702f",
+    "category": "Governing Law",
     "contract_type": "Distribution Agreement",
-    "excerpt": "If, during the term of this Agreement, Supplier offers any other distributor more favorable pricing terms for substantially similar volumes of the Products, Supplier shall promptly notify Distributor and shall make such more favorable terms available to Distributor for the remainder of the term.",
+    "contract_title": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT",
+    "excerpt": "This Agreement is governed by English law and the parties submit to the exclusive jurisdiction of the English courts in  relation to any dispute (contractual or non-contractual) concerning this Agreement save that either party may apply to any court for an  injunction or other relief to protect its Intellectual Property Rights.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-governing-law-852b5b9abb",
+    "category": "Governing Law",
+    "contract_title": "ADAMSGOLFINC_03_21_2005-EX-10.17-ENDORSEMENT AGREEMENT",
+    "excerpt": "This Agreement shall be governed and construed according to the laws of the State of Kansas.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-anti-assignment-9a3f2fd04c",
+    "category": "Anti-Assignment",
+    "contract_title": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT",
+    "excerpt": "In  the  event  either  party  (a)  becomes                   adjudicated insolvent,  (b) discontinues its business, (c) has                   voluntary of  involuntary  bankruptcy  proceedings  instituted                   against  it, or (d) makes an  assignment  for the  benefit  of                   creditors, the other party shall be entitled to terminate this                   Agreement effective immediately upon written notice.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-anti-assignment-3802dc99f3",
+    "category": "Anti-Assignment",
+    "contract_title": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT",
+    "excerpt": "No  assignment  of this  Agreement  or any  right                   accruing  hereunder  shall be made by the Distributor in whole                   or in part,  without the prior written consent of the Company,                   which  consent  shall  not  be  unreasonably  withheld.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-anti-assignment-cc42656781",
+    "category": "Anti-Assignment",
+    "contract_type": "Distribution Agreement",
+    "contract_title": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT",
+    "excerpt": "[ * ] may [ * ]any of its rights or obligations under this Agreement without the prior written consent of [ * ].",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-change-of-control-b33263b50c",
+    "category": "Change Of Control",
+    "contract_type": "Distribution Agreement",
+    "contract_title": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT",
+    "excerpt": "For the  avoidance of doubt, a Change of Control shall be deemed an assignment hereunder unless [ * ] does not exercise its [ * ].",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-change-of-control-311d2a45b9",
+    "category": "Change Of Control",
+    "contract_type": "Distribution Agreement",
+    "contract_title": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT",
+    "excerpt": "For the avoidance of doubt, if following [ * ] there is a transfer of shareholding or interests in Distributor to any existing or new  shareholder(s) which results in any person or persons subsequently gaining Control of Distributor, then Google may exercise its right to  terminate in accordance with this clause 5.4.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-change-of-control-98397fc39a",
+    "category": "Change Of Control",
+    "contract_type": "Distribution Agreement",
+    "contract_title": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT",
+    "excerpt": "[ * ] expected to experience, or [ * ] is experiencing, such  Change of Control shall notify [ * ] in writing of this before or within [ * ] after the Change of Control.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-most-favored-nation-b51bd7b86f",
+    "category": "Most Favored Nation",
+    "contract_type": "License Agreement",
+    "contract_title": "ChinaRealEstateInformationCorp_20090929_F-1_EX-10.32_4771615_EX-10.32_Content License Agreement",
+    "excerpt": "In the event E-House Research and Training Institute becomes entitled to charge, invoice, or otherwise receive from, Licensee any  royalties, fees or other remuneration for use of the E-House Licensed Data and Information pursuant to amendments to the Master Transaction  Agreement or through other means, Licensor and Licensee shall use good faith efforts to amend this Agreement such that Licensor becomes  entitled to charge, invoice, or otherwise receive fees from Licensee to use the Licensed Domain Names and Licensed Content, such fees to be  agreed upon by the Parties, provided that (i) such fees shall be commercially reasonable and (ii) such fees shall not exceed the fees charged by  Licensor to unaffiliated third parties for use of the Licensed Content, taking into account any other consideration received by Licensor (including,  but not limited to, discounted services offerings from the third party).",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-most-favored-nation-4f5a84a1df",
+    "category": "Most Favored Nation",
+    "contract_title": "SENMIAOTECHNOLOGYLTD_02_19_2019-EX-10.5-Collaboration Agreement",
+    "excerpt": "Party B shall provide the Driver User with long-term and stable rental sources and the most favorable financial leasing scheme, complete the vehicle leasing transactions with the Driver User through the Platform, and provide the Driver User with high-quality financial leasing services.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-most-favored-nation-9e52ec4122",
+    "category": "Most Favored Nation",
+    "contract_title": "SENMIAOTECHNOLOGYLTD_02_19_2019-EX-10.5-Collaboration Agreement",
+    "excerpt": "Party B guarantees that the Driver User will enjoy the most favorable treatment in accordance with the terms and conditions stipulated in This Agreement during the Period of Cooperation.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-exclusivity-be005ac6db",
+    "category": "Exclusivity",
+    "contract_title": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT",
+    "excerpt": "The Company appoints the Distributor as an  exclusive  distributor  of Products in the Market,  subject to the terms and conditions of this Agreement.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-exclusivity-e39b21f1a1",
+    "category": "Exclusivity",
+    "contract_title": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT",
+    "excerpt": "Company  hereby   appoints                            Distributor as Company's exclusive distributor within                            the Market and grants to  Distributor  the  exclusive                            right  to sell and  distribute  Products  within  the                            Market,   and   Distributor   hereby   accepts   such                            appointment  and such grant,  in accordance  with the                            terms and conditions of this  Agreement.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-exclusivity-3e8e74df9b",
+    "category": "Exclusivity",
+    "contract_title": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT",
+    "excerpt": "The  Distributor  shall  not order or                   purchase Products from any source other than the Company.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-non-compete-4f790293dc",
+    "category": "Non-Compete",
+    "contract_title": "ADAMSGOLFINC_03_21_2005-EX-10.17-ENDORSEMENT AGREEMENT",
+    "excerpt": "When endorsing a non-competitive product, under no circumstances shall CONSULTANT wear, play, use, hold or in any way be associated with an ADAMS GOLF competitor's Product.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-non-compete-e48715cbcb",
+    "category": "Non-Compete",
+    "contract_type": "Consulting Agreement",
+    "contract_title": "KIROMICBIOPHARMA,INC_05_11_2020-EX-10.23-CONSULTING AGREEMENT",
+    "excerpt": "Without limiting the foregoing, Consultant agrees to use his or her best efforts (A) to segregate Consultant's",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-non-compete-367a534ac9",
+    "category": "Non-Compete",
+    "contract_type": "Consulting Agreement",
+    "contract_title": "KIROMICBIOPHARMA,INC_05_11_2020-EX-10.23-CONSULTING AGREEMENT",
+    "excerpt": "Services performed under this Agreement from Consultant's work done for any other companies for whom Consultant is providing services so as to minimize any questions of disclosure of, or rights under, any inventions, (B) to notify the Company if at any time the Consultant believes that such questions may result from his or her performance under this Agreement and (C) to assist the Company in fairly resolving any questions in this regard which may arise.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-no-solicit-of-employees-77e8f3836a",
+    "category": "No-Solicit Of Employees",
+    "contract_title": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT",
+    "excerpt": "During the Term of this Agreement and for a period of                            twelve (12) months  thereafter,  the  Distributor (on                            behalf of itself,  each of its affiliates and each of                            their respective representatives) agrees that it will                            not  directly  or  indirectly  solicit  or  hire  any                            executive,  managerial  or technical  employee of the                            Company or any of its affiliates.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-no-solicit-of-employees-a0a05ebd99",
+    "category": "No-Solicit Of Employees",
+    "contract_title": "FTENETWORKS,INC_02_18_2016-EX-99.4-STRATEGIC ALLIANCE AGREEMENT",
+    "excerpt": "Subcontractor, during the term of this Agreement and for a period of one year thereafter, shall not, directly or indirectly, for itself or on behalf of or in conjunction with any other person, partnership, corporation, business or organization, solicit, hire, contract with or engage the employment of an employee of EDGE with whom Subcontractor or its personnel have contact as a result of Subcontractor's performance of this Agreement, unless Subcontractor (i) obtains the written consent of EDGE, as applicable, and (ii) pays EDGE as applicable a fee to be mutually agreed upon",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-no-solicit-of-employees-2664337260",
+    "category": "No-Solicit Of Employees",
+    "contract_title": "FTENETWORKS,INC_02_18_2016-EX-99.4-STRATEGIC ALLIANCE AGREEMENT",
+    "excerpt": "In the event Subcontractor directly employs or contracts with an employee of EDGE without the consent of EDGE, Subcontractor shall pay as liquidated damages two times the then monthly salary of the employee for a three-month period of time.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-no-solicit-of-customers-88a5a37d9f",
+    "category": "No-Solicit Of Customers",
+    "contract_title": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT",
+    "excerpt": "Term of the  Agreement  and for a period of  eighteen\n\n\n\n\n\n                           (18) months thereafter,  nor will Distributor solicit                            any  customer  or  potential  customer  of Company to                            purchase a competitive product during that period.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-no-solicit-of-customers-5cbc220060",
+    "category": "No-Solicit Of Customers",
+    "contract_title": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT",
+    "excerpt": "Distributor further agrees that it will not interfere                            with or  otherwise  disrupt  the  business  relations                            between the Company or nay of its  affiliates and any                            of their current or prospective customers,  suppliers                            or distributors, during the",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-no-solicit-of-customers-07507d3cec",
+    "category": "No-Solicit Of Customers",
+    "contract_type": "Franchise Agreement",
+    "contract_title": "PfHospitalityGroupInc_20150923_10-12G_EX-10.1_9266710_EX-10.1_Franchise Agreement3",
+    "excerpt": "Member covenants and agrees that during the term of the Franchise Agreement, except as otherwise approved in writing by Franchisor, Member shall not, either directly or indirectly, for itself, or through, on behalf of, or in conjunction with any person, persons, partnership, corporation, or entity:",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-termination-for-convenience-9635da953e",
+    "category": "Termination For Convenience",
+    "contract_type": "Consulting Agreement",
+    "contract_title": "KIROMICBIOPHARMA,INC_05_11_2020-EX-10.23-CONSULTING AGREEMENT",
+    "excerpt": "Either Consultant or Company may terminate this Agreement upon prior written notice thereof to the other party.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-termination-for-convenience-48f3dacaec",
+    "category": "Termination For Convenience",
+    "contract_title": "FTENETWORKS,INC_02_18_2016-EX-99.4-STRATEGIC ALLIANCE AGREEMENT",
+    "excerpt": "After the Initial Term, this Agreement shall continue on a month to month basis until terminated by either party upon thirty (30) days prior written notice to the other setting forth the effective date of such termination.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-termination-for-convenience-6448345ba7",
+    "category": "Termination For Convenience",
+    "contract_title": "DOMINIADVISORTRUST_02_18_2005-EX-99.(H)(2)-SPONSORSHIP AGREEMENT",
+    "excerpt": "This Agreement may be terminated at any time, without the payment of any penalty, with respect to any series or the Trust, by the Board of Trustees of the Trust, or by the Sponsor, in each case on not less than 60 days' written notice to the other party.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-audit-rights-3c68cb99c3",
+    "category": "Audit Rights",
+    "contract_type": "Distribution Agreement",
+    "contract_title": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT",
+    "excerpt": "During the Term, and for a period of [ * ] thereafter, Google may audit Distributor's relevant records to confirm  Distributor's compliance with this Agreement.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-audit-rights-4d8f7eac9b",
+    "category": "Audit Rights",
+    "contract_title": "FTENETWORKS,INC_02_18_2016-EX-99.4-STRATEGIC ALLIANCE AGREEMENT",
+    "excerpt": "As set forth in the Exhibit, EDGE shall have the opportunity to review and inspect all elements of the Work in a reasonable manner.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-audit-rights-26bd50eb69",
+    "category": "Audit Rights",
+    "contract_title": "IntegrityFunds_20200121_485BPOS_EX-99.E UNDR CONTR_11948727_EX-99.E UNDR CONTR_Service Agreement",
+    "excerpt": "The Fund shall also furnish Integrity upon request with: (a) annual audits of the Fund's books and accounts made by independent public accountants regularly retained by the Fund, (b) semi-annual unaudited financial statements pertaining to the Fund, (c) quarterly earnings statements prepared by the Fund, (d) a monthly itemized list of the securities in the portfolio of the Fund, (e) monthly balance sheets as soon as practicable after the end of each month, and (f) from time to time such additional information regarding the Fund's financial condition as Integrity may reasonably request.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-insurance-56a74f6980",
+    "category": "Insurance",
+    "contract_title": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT",
+    "excerpt": "Company will carry a reasonable                   amount of product  liability  insurance  through a  reasonably                   acceptable  products liability insurance company and will name                   the  Distributor  as an additional  insured under that policy.                   Company  will make  reasonable  efforts  to  procure a policy,                   which is non-cancelable, except upon thirty (30) days, advance                   notice to the Distributor.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-insurance-c6c76b2b0b",
+    "category": "Insurance",
+    "contract_type": "Marketing Agreement",
+    "contract_title": "MetLife, Inc. - Remarketing Agreement",
+    "excerpt": "as an insurance company in its respective jurisdiction of incorporation and is duly licensed or authorized as an insurer in each other jurisdiction where it is required to be so licensed or authorized to conduct its business, in each case with such exceptions as would not have, individually or in the aggregate, a Material Adverse Effect; except as otherwise described in the Disclosure Package, each Insurance Subsidiary has all other approvals, orders, consents, authorizations, licenses, certificates, permits, registrations and qualifications (collectively, the \"Approvals\") of and from all insurance regulatory authorities to conduct its business, with such exceptions as would not have, individually or in the aggregate, a Material Adverse Effect; there is no pending or, to the knowledge of the Company, threatened action, suit, proceeding or investigation that could reasonably be expected to lead to any revocation, termination or suspension of any such Approval, the revocation, termination or suspension of which would have, individually or in the aggregate, a Material Adverse Effect; and, to the knowledge of the Company, no insurance regulatory agency or body has issued any order or d",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-insurance-a793f3f616",
+    "category": "Insurance",
+    "contract_type": "Marketing Agreement",
+    "contract_title": "MetLife, Inc. - Remarketing Agreement",
+    "excerpt": "Each Insurance Subsidiary is in compliance with and conducts its businesses in conformity with all applicable insurance laws and regulations of its respective jurisdiction of incorporation and the insurance laws and regulations of other jurisdictions which are applicable to it, in each case with such exceptions as would not have, individually or in the aggregate, a Material Adverse Effect.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-license-grant-b7e08951f7",
+    "category": "License Grant",
+    "contract_title": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT",
+    "excerpt": "Company  hereby   appoints                            Distributor as Company's exclusive distributor within                            the Market and grants to  Distributor  the  exclusive                            right  to sell and  distribute  Products  within  the                            Market,   and   Distributor   hereby   accepts   such                            appointment  and such grant,  in accordance  with the                            terms and conditions of this  Agreement.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-license-grant-4db28bc451",
+    "category": "License Grant",
+    "contract_title": "LIMEENERGYCO_09_09_1999-EX-10-DISTRIBUTOR AGREEMENT",
+    "excerpt": "The Company  hereby grants the  Distributor                            the right to do business  and use the name  \"Electric                            City of  Illinois\"  or a  similar  variation  thereof                            (collectively   the   \"Names\")  for  use  under  this                            Agreement.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-license-grant-fb49b19e93",
+    "category": "License Grant",
+    "contract_type": "Distribution Agreement",
+    "contract_title": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT",
+    "excerpt": "Subject to the terms and conditions of this Agreement, Google grants to Distributor a [* ] license during the  Term to: (a) bundle the Distribution Products, in machine-readable binary code format only, solely with Distributor App(s); (b) distribute  Bundles directly (or indirectly, subject to Clause 2.2 (Third Party Distribution)) to End Users in the Territory; (c) when indicated by the  applicable Criteria Checker and requested by the End User in accordance with clause 3.2 (Form of Distribution Offering), install the  Chrome Browser or the Google Toolbar (as applicable) on the End User's system using the Google Installers; and (d) reproduce (or have  reproduced by Third Party Distributors as defined in Clause 2.2 (Third Party Distribution)), the Distribution Products to the extent  necessary to exercise the rights granted in (a), (b) and (c).",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-cap-on-liability-e646492797",
+    "category": "Cap On Liability",
+    "contract_type": "Distribution Agreement",
+    "contract_title": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT",
+    "excerpt": "Subject to Clauses 9.1 and 9.2, neither party shall be liable under this Agreement (whether in contract, tort or otherwise) for any:\n\n  (a) loss of anticipated savings;\n\n  (b) loss of business opportunity (which for the avoidance of doubt shall not include loss of advertising revenue);\n\n  (c) loss of or corruption of data;\n\n  (d) loss or damage resulting from third party claims; or\n\n  (e) indirect or consequential losses;\n     suffered or incurred by the other party (whether or not such losses were within the contemplation of the parties at the date of this  Agreement).",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-cap-on-liability-f84b9a40b5",
+    "category": "Cap On Liability",
+    "contract_type": "Distribution Agreement",
+    "contract_title": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT",
+    "excerpt": "Subject to Clauses 9.1 and 9.2, each party's total liability under or in connection with this Agreement (whether in contract, tort or  otherwise) arising in any Contract Year is limited to the greater of:\n\n  (a) [ * ] Euros ([ * ] Euros); and\n\n  (b) [ * ]% of the total payment due to the Distributor in the relevant Contract Year pursuant to Clause 4 (Payment Terms).",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-cap-on-liability-d4af6f35fe",
+    "category": "Cap On Liability",
+    "contract_type": "Distribution Agreement",
+    "contract_title": "WHITESMOKE,INC_11_08_2011-EX-10.26-PROMOTION AND DISTRIBUTION AGREEMENT",
+    "excerpt": "Notwithstanding anything to the contrary, in no event shall the [ * ] paid or payable to Distributor by Google pursuant to Clause 4.1  (Payments) exceed the [ * ].",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-non-disparagement-c30f60f0d2",
+    "category": "Non-Disparagement",
+    "contract_type": "Franchise Agreement",
+    "contract_title": "INTERNATIONALFASTFOODCORP_04_04_1997-EX-99-FRANCHISE AGREEMENT",
+    "excerpt": "The Franchisee  will not directly or indirectly,  at any time during the term of this Agreement or thereafter,  do or cause to be done any act or thing  disputing,  attacking or in any way impairing the validity of and BKC's right,  title or interest in the Burger King Marks and the Burger King System.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-non-disparagement-0bc69295ea",
+    "category": "Non-Disparagement",
+    "contract_type": "Development Agreement",
+    "contract_title": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2",
+    "excerpt": "The Client and the Designer both agree to never to disparage or speak ill of the other party to anyone and or post negative or disparaging comments Online regarding any of the Designer's products, services, affiliates, subsidiaries, officers, directors, employees or shareholders, and will take reasonable steps to prevent and will not knowingly permit any of their respective employees or agents to, disparage or speak ill of such persons.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-non-disparagement-91a0911140",
+    "category": "Non-Disparagement",
+    "contract_type": "Development Agreement",
+    "contract_title": "PelicanDeliversInc_20200211_S-1_EX-10.3_11975895_EX-10.3_Development Agreement2",
+    "excerpt": "The Client and Designer both agree not to post on defamatory websites or review websites any negative posts concerning each other, the names of our companies, and our employees.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-notice-period-to-terminate-renewal-62a86339b1",
+    "category": "Notice Period To Terminate Renewal",
+    "contract_title": "FTENETWORKS,INC_02_18_2016-EX-99.4-STRATEGIC ALLIANCE AGREEMENT",
+    "excerpt": "After the Initial Term, this Agreement shall continue on a month to month basis until terminated by either party upon thirty (30) days prior written notice to the other setting forth the effective date of such termination.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-notice-period-to-terminate-renewal-a90987ddad",
+    "category": "Notice Period To Terminate Renewal",
+    "contract_title": "SIBANNAC,INC_12_04_2017-EX-2.1-Strategic Alliance Agreement",
+    "excerpt": "The term of this Agreement is twelve (12) months from the date hereof, and will be automatically renewed for one (1) additional twelve month period unless either party shall notify the other in writing of its intention not to renew. Such notice must be given ninety (90) days prior to expiration of the original term.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-notice-period-to-terminate-renewal-060f603620",
+    "category": "Notice Period To Terminate Renewal",
+    "contract_type": "License Agreement",
+    "contract_title": "CORIOINC_07_20_2000-EX-10.5-LICENSE AND HOSTING AGREEMENT",
+    "excerpt": "Thereafter, this Agreement shall automatically renew for         subsequent one (1) year periods unless either party provides the other         party with written notification at least thirty (30) days prior to the         expiration of the initial five (5) year term or any one (1) year renewal         thereof of its intention to terminate this Agreement.",
     "source": "cuad"
   }
 ]
