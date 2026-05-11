@@ -7,6 +7,8 @@ export interface CuadClause {
   contract_title: string;
   contract_type?: string;
   excerpt: string;
+  context_before?: string;
+  context_after?: string;
   source: 'cuad';
 }
 

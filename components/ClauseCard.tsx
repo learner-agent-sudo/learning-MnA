@@ -24,16 +24,39 @@ export function ClauseCard({ clause }: Props) {
           </p>
         ) : (
           <ul className="mt-3 space-y-3">
-            {examples.map((ex) => (
-              <li key={ex.id} className="text-sm">
-                <div className="text-xs text-muted">
-                  {ex.contract_type ?? 'Contract'} · {ex.contract_title}
-                </div>
-                <blockquote className="mt-1 border-l-2 border-slate-200 pl-3 text-ink/90">
-                  {ex.excerpt}
-                </blockquote>
-              </li>
-            ))}
+            {examples.map((ex) => {
+              const hasContext = !!(ex.context_before || ex.context_after);
+              return (
+                <li key={ex.id} className="text-sm">
+                  <div className="text-xs text-muted">
+                    {ex.contract_type ?? 'Contract'} · {ex.contract_title}
+                  </div>
+                  <blockquote className="mt-1 border-l-2 border-slate-200 pl-3 text-ink/90">
+                    {ex.excerpt}
+                  </blockquote>
+                  {hasContext && (
+                    <details className="mt-1">
+                      <summary className="cursor-pointer text-xs font-medium text-accent">
+                        Show in context
+                      </summary>
+                      <div className="mt-2 whitespace-pre-wrap rounded bg-slate-50 p-3 text-xs leading-relaxed text-ink/80">
+                        {ex.context_before && (
+                          <span className="text-muted">
+                            …{ex.context_before}
+                          </span>
+                        )}
+                        <mark className="bg-amber-100 px-0.5">{ex.excerpt}</mark>
+                        {ex.context_after && (
+                          <span className="text-muted">
+                            {ex.context_after}…
+                          </span>
+                        )}
+                      </div>
+                    </details>
+                  )}
+                </li>
+              );
+            })}
           </ul>
         )}
       </article>

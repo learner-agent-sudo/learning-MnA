@@ -51,6 +51,8 @@ CUAD_CATEGORIES_WE_USE = [
 
 MAX_PER_CATEGORY = 3
 MAX_EXCERPT_CHARS = 1200
+CONTEXT_BEFORE_CHARS = 250
+CONTEXT_AFTER_CHARS = 450
 OUT_PATH = pathlib.Path(__file__).resolve().parent.parent / "public" / "clauses.json"
 
 
@@ -128,11 +130,14 @@ def main() -> int:
         category = extract_category(row["question"])
         if category not in wanted:
             continue
-        answers = row.get("answers", {}).get("text", []) or []
+        answers_field = row.get("answers", {}) or {}
+        answers = answers_field.get("text", []) or []
+        starts = answers_field.get("answer_start", []) or []
         if not answers:
             continue
         bucket = by_cat.setdefault(category, [])
-        for raw in answers:
+        context = row.get("context") or ""
+        for idx, raw in enumerate(answers):
             ans = (raw or "").strip()
             if not ans or len(bucket) >= MAX_PER_CATEGORY:
                 continue
@@ -150,6 +155,17 @@ def main() -> int:
             ctype = contract_type_from_title(title)
             if ctype:
                 entry["contract_type"] = ctype
+            # Pull a context window from the contract around the excerpt.
+            start = starts[idx] if idx < len(starts) else -1
+            if context and isinstance(start, int) and start >= 0:
+                before_start = max(0, start - CONTEXT_BEFORE_CHARS)
+                after_end = min(len(context), start + len(ans) + CONTEXT_AFTER_CHARS)
+                before = context[before_start:start]
+                after = context[start + len(ans):after_end]
+                if before.strip():
+                    entry["context_before"] = before
+                if after.strip():
+                    entry["context_after"] = after
             bucket.append(entry)
         if all(len(by_cat.get(c, [])) >= MAX_PER_CATEGORY for c in wanted):
             break
@@ -161,7 +177,11 @@ def main() -> int:
             if "contract_type" in entry:
                 ordered["contract_type"] = entry["contract_type"]
             ordered["contract_title"] = entry["contract_title"]
+            if "context_before" in entry:
+                ordered["context_before"] = entry["context_before"]
             ordered["excerpt"] = entry["excerpt"]
+            if "context_after" in entry:
+                ordered["context_after"] = entry["context_after"]
             ordered["source"] = entry["source"]
             out.append(ordered)
 
