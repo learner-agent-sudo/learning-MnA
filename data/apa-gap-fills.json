@@ -1,0 +1,247 @@
+[
+  {
+    "id": "gf-engagement-fee",
+    "category": "Banker Fee Structure & Tail",
+    "description": "Compensation for the financial advisor: retainer, success fee (often as % of transaction value, sometimes with progressive scale), tail period during which a fee is owed if the client closes with a prior introduction.",
+    "example_text": "In consideration of the services rendered, Client shall pay Advisor (a) a non-refundable retainer of $___, creditable against the Success Fee, and (b) a Success Fee equal to ___% of the Aggregate Consideration upon consummation of a Transaction. If, during the period of 18 months following termination of this engagement, Client consummates a Transaction with any Person introduced by Advisor, the Success Fee shall remain payable.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-cim-disclaimer",
+    "category": "CIM Legal Disclaimer & No-Reliance",
+    "description": "Standard legend in the Confidential Information Memorandum disclaiming reliance and reserving the seller's right to terminate discussions at any time.",
+    "example_text": "This Memorandum has been prepared by the Company solely for informational purposes. It does not purport to be all-inclusive or to contain all information that a prospective purchaser may desire. Neither the Company nor its advisors makes any representation or warranty as to the accuracy or completeness of the information contained herein. Each recipient must conduct its own analysis and due diligence and shall have no claim against the Company on the basis of this Memorandum.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-standstill",
+    "category": "Standstill",
+    "description": "Buyer-side restriction against acquiring securities, making proposals, or otherwise interfering with the target outside the negotiated process. Typical in public-target or large-private contexts.",
+    "example_text": "For a period of twelve (12) months from the date hereof, the Receiving Party shall not, without the prior written consent of the Disclosing Party, directly or indirectly (a) acquire any securities of the Company, (b) propose any merger, business combination, recapitalization, or similar transaction, or (c) solicit proxies from the Company's stockholders.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-residuals",
+    "category": "Residuals Carve-Out",
+    "description": "Permits use of unaided memory of confidential information by recipient personnel. Heavily negotiated; sellers resist, buyers (especially strategics) insist.",
+    "example_text": "Notwithstanding the foregoing, the Receiving Party may use Residual Information for any purpose, provided that no Residual Information may be used in a manner that infringes any patent or copyright of the Disclosing Party. 'Residual Information' means information in non-tangible form that is retained in the unaided memory of personnel who have had access to the Confidential Information without reference to any tangible embodiment thereof.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-binding-split",
+    "category": "Binding vs. Non-Binding Split",
+    "description": "Express recital identifying which LOI provisions create binding legal obligations (typically exclusivity, confidentiality, expenses, governing law, termination) vs. which are non-binding expressions of intent.",
+    "example_text": "Except for Sections [Exclusivity], [Confidentiality], [Expenses], [Governing Law], and [Termination] (collectively, the 'Binding Provisions'), this Letter does not constitute a binding obligation of any party and is intended only as an expression of the parties' present intention to negotiate a definitive Asset Purchase Agreement.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-headline-price",
+    "category": "Headline Price & Consideration Mix",
+    "description": "Indicative purchase price, expressed on a cash-free / debt-free basis with a normalized working capital target, and the proposed mix of cash, stock, earnout, and rollover.",
+    "example_text": "The aggregate purchase price for the Purchased Assets shall be $___ (the 'Base Purchase Price'), assuming the Business is delivered on a cash-free, debt-free basis with Net Working Capital equal to the Target Working Capital. Consideration shall be paid (i) $___ in cash at Closing, (ii) $___ in Buyer common stock, and (iii) up to $___ as an Earnout pursuant to Schedule ___.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-conditions-to-definitive",
+    "category": "Conditions to Definitive Agreement",
+    "description": "Non-binding conditions to executing a definitive APA: satisfactory completion of due diligence, internal/board approvals, regulatory feasibility, financing.",
+    "example_text": "Execution of the Definitive Agreement is subject to (a) Buyer's satisfactory completion of business, legal, financial, tax and accounting due diligence in its sole discretion; (b) approval by Buyer's Board of Directors; (c) absence of a Material Adverse Change in the Business; and (d) Buyer's receipt of financing on terms reasonably acceptable to Buyer.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-expense-reimbursement",
+    "category": "Expense Reimbursement",
+    "description": "Each party bears its own expenses; deviations include reimbursement on bad-faith termination or break-fees.",
+    "example_text": "Each party shall bear its own fees and expenses (including fees of counsel, accountants, and other advisors) incurred in connection with the negotiation of the Definitive Agreement, regardless of whether the Transaction is consummated.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-purchased-assets",
+    "category": "Purchased Assets / Excluded Assets",
+    "description": "Defines exactly which assets transfer to buyer (the 'Purchased Assets') and which are retained by seller (the 'Excluded Assets'). Drives the entire economics of an APA.",
+    "example_text": "At the Closing, Seller shall sell, convey, transfer, assign and deliver to Buyer, and Buyer shall purchase and accept from Seller, all of Seller's right, title and interest in and to the assets, properties and rights of every kind used in or related to the Business, including (i) all tangible personal property listed on Schedule 1.1(a), (ii) all Contracts set forth on Schedule 1.1(b) (the 'Assigned Contracts'), (iii) all Intellectual Property used in the Business, (iv) all Permits to the extent transferable, (v) all accounts receivable, (vi) all books and records, and (vii) all goodwill (collectively, the 'Purchased Assets'). Notwithstanding the foregoing, the Purchased Assets shall not include any asset listed on Schedule 1.2 (the 'Excluded Assets').",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-assumed-liabilities",
+    "category": "Assumed Liabilities / Excluded Liabilities",
+    "description": "Parallel split for liabilities. The 'Excluded Liabilities' clause is what makes an APA structurally attractive to buyers: undisclosed and historical liabilities stay with seller.",
+    "example_text": "At the Closing, Buyer shall assume only those liabilities of Seller expressly set forth on Schedule 2.1 (the 'Assumed Liabilities'). All other liabilities of Seller of any kind, whether known or unknown, accrued or contingent, shall remain the sole responsibility of Seller (the 'Excluded Liabilities'), including (i) all Indebtedness, (ii) all Liabilities for Taxes attributable to Pre-Closing Tax Periods, (iii) all Liabilities arising out of the Excluded Assets, (iv) all Liabilities relating to employees and employee benefits arising before the Closing, and (v) all Liabilities arising out of litigation pending or threatened as of the Closing.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-purchase-price",
+    "category": "Purchase Price & Adjustment",
+    "description": "Mechanics for computing the price: base price plus/minus closing working capital, cash, debt; post-closing true-up; dispute resolution.",
+    "example_text": "The 'Closing Date Payment' shall equal the Base Purchase Price (i) plus Estimated Cash, (ii) minus Estimated Indebtedness, and (iii) plus the amount (if any) by which Estimated Net Working Capital exceeds the Target Working Capital, or minus the amount (if any) by which Estimated Net Working Capital is less than the Target Working Capital. Within 90 days following the Closing, Buyer shall deliver to Seller the Final Closing Statement. If Seller disputes any item, the parties shall negotiate in good faith for 30 days; remaining disputes shall be referred to an Independent Accountant whose determination shall be final and binding.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-earnout",
+    "category": "Earnout",
+    "description": "Contingent consideration tied to post-closing performance metrics (revenue, EBITDA, product milestones). Heavily disputed in practice — drafting must address acceleration, operating covenants, and dispute resolution.",
+    "example_text": "Buyer shall pay Seller an Earnout of up to $___ based on the achievement of the Earnout Targets set forth on Schedule ___ during the Earnout Period. During the Earnout Period, Buyer shall (i) operate the Business in good faith and shall not take any action with the primary intent of avoiding payment of the Earnout, and (ii) provide Seller with quarterly statements of Earnout Performance. Disputes shall be resolved by an Independent Accountant pursuant to Section ___. Notwithstanding the foregoing, Buyer shall have no obligation to operate the Business in any particular manner or maximize the Earnout.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-escrow",
+    "category": "Escrow / Holdback",
+    "description": "Portion of purchase price held in escrow (typically 5–15%) for a defined period to satisfy indemnification claims. Has been partially displaced by R&W insurance.",
+    "example_text": "At the Closing, Buyer shall deposit $___ (the 'Indemnity Escrow Amount') with the Escrow Agent to be held pursuant to the Escrow Agreement to satisfy Seller's indemnification obligations under Article ___. The Indemnity Escrow Amount shall be released to Seller on the 18-month anniversary of the Closing Date, less any amounts subject to pending claims.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-reps-seller",
+    "category": "Representations & Warranties (Seller)",
+    "description": "Seller's statements of fact: organization, authority, no-conflict, capitalization, financial statements, no undisclosed liabilities, absence of changes, taxes, litigation, compliance, contracts, IP, employees, benefits, environmental, real property, sufficiency of assets, customers & suppliers, brokers.",
+    "example_text": "Seller represents and warrants to Buyer that, except as set forth in the Disclosure Schedule: (a) Seller is duly organized, validly existing and in good standing; (b) Seller has full power and authority to execute and deliver this Agreement; (c) the Financial Statements fairly present in all material respects the financial condition of the Business; (d) Seller has filed all material Tax Returns and paid all material Taxes; (e) there is no Action pending or, to Seller's Knowledge, threatened against the Business; (f) Seller owns or has the right to use all Intellectual Property necessary to conduct the Business as currently conducted; and (g) the Purchased Assets are sufficient to operate the Business immediately following the Closing in the manner conducted by Seller during the twelve months prior thereto.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-reps-buyer",
+    "category": "Representations & Warranties (Buyer)",
+    "description": "Narrower than seller's: organization, authority, no-conflict, financing/funds availability, no buyer brokers, securities matters if stock consideration.",
+    "example_text": "Buyer represents and warrants to Seller that (a) Buyer is duly organized, validly existing and in good standing; (b) Buyer has full power and authority to execute and deliver this Agreement and to consummate the Transactions; (c) the execution, delivery and performance of this Agreement do not conflict with Buyer's organizational documents or any material agreement to which Buyer is a party; and (d) Buyer has, and at the Closing will have, sufficient cash on hand to pay the Closing Date Payment.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-pre-closing-covenants",
+    "category": "Pre-Closing Covenants",
+    "description": "Promises about behavior between signing and closing: ordinary course operation, access, no-solicit of competing offers, regulatory cooperation, notice of breach.",
+    "example_text": "From the date hereof until the Closing, Seller shall, and shall cause the Business to, (i) operate in the ordinary course consistent with past practice, (ii) use commercially reasonable efforts to preserve intact the Business's relationships with customers, suppliers, and employees, (iii) not take any action listed on Schedule 5.1 without Buyer's prior written consent, (iv) provide Buyer with reasonable access to the Business's books, records, properties, and personnel, and (v) not solicit, encourage or entertain any inquiry, proposal or offer from any Person (other than Buyer) relating to a competing transaction.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-conditions-to-closing",
+    "category": "Conditions to Closing",
+    "description": "Conditions to each party's obligation to close: bring-down of reps, performance of covenants, no MAC, regulatory approvals, third-party consents, delivery of ancillary documents.",
+    "example_text": "The obligation of Buyer to consummate the Closing is subject to the satisfaction or waiver of the following conditions: (a) the representations and warranties of Seller (other than Fundamental Representations) shall be true and correct as of the Closing Date except where the failure to be so true and correct would not, individually or in the aggregate, have a Material Adverse Effect; (b) Seller shall have performed in all material respects all covenants required to be performed at or prior to the Closing; (c) no Material Adverse Effect shall have occurred since the date hereof; (d) all required regulatory approvals shall have been obtained; (e) the third-party consents listed on Schedule ___ shall have been obtained; and (f) Seller shall have delivered each Closing deliverable set forth in Section ___.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-indemnification",
+    "category": "Indemnification",
+    "description": "Post-closing remedy regime: survival periods, basket (deductible or tipping), cap, exclusions (fraud, fundamental reps), exclusive remedy clause, sandbagging.",
+    "example_text": "Seller shall indemnify Buyer from and against all Losses arising out of (a) any breach of Seller's representations or warranties, (b) any breach of Seller's covenants, or (c) any Excluded Liability. Seller's indemnification obligation under clause (a) shall (i) survive for 18 months following the Closing (except for Fundamental Representations, which shall survive for 6 years, and Tax Representations, which shall survive until 60 days after the applicable statute of limitations); (ii) be subject to a $___ deductible (the 'Basket') such that Seller shall not be liable until aggregate Losses exceed the Basket, and then only for amounts in excess thereof; and (iii) not exceed in the aggregate ___% of the Purchase Price (the 'Cap'). The Basket and Cap shall not apply to Losses arising from (x) Fraud, (y) breach of Fundamental Representations, or (z) breach of Tax Representations. Except in the case of Fraud, the indemnification rights set forth in this Article shall be the sole and exclusive remedy of the Buyer Indemnitees.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-mac",
+    "category": "Material Adverse Change (MAC)",
+    "description": "Definition and carve-outs governing when buyer can walk. Carve-outs (industry, economy, war) shift risk to buyer; disproportionate-effect clawbacks shift it back.",
+    "example_text": "'Material Adverse Effect' means any event, occurrence or change that has, or would reasonably be expected to have, a material adverse effect on the business, results of operations or financial condition of the Business, taken as a whole; provided, however, that none of the following shall be deemed to constitute a Material Adverse Effect: (i) changes in general economic or political conditions, (ii) changes in the industries in which the Business operates, (iii) changes in applicable Law or GAAP, (iv) acts of war, terrorism or pandemic, or (v) actions taken at the written request of Buyer; except, in the case of clauses (i)–(iv), to the extent such change has a disproportionate impact on the Business relative to other participants in its industry.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-termination-fee",
+    "category": "Termination & Termination Fee",
+    "description": "Bases for termination (mutual, drop-dead date, uncured breach, failure of closing condition) and any associated termination fees or expense reimbursements.",
+    "example_text": "This Agreement may be terminated at any time prior to the Closing: (a) by mutual written consent of the parties; (b) by either party if the Closing has not occurred on or prior to the Outside Date (___); (c) by Buyer if Seller has breached any representation, warranty or covenant which would cause a closing condition to fail, and such breach has not been cured within 30 days; or (d) by either party if a Governmental Order permanently restraining the Transaction has become final and non-appealable. If terminated pursuant to clause (c), Seller shall pay Buyer a termination fee equal to Buyer's documented out-of-pocket expenses, up to $___.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-tax-matters",
+    "category": "Tax Matters & §1060 Allocation",
+    "description": "Allocation of purchase price across asset classes under IRC §1060 (binding on both parties for IRS reporting), transfer taxes, cooperation on returns and audits.",
+    "example_text": "The Purchase Price (plus Assumed Liabilities, to the extent properly taken into account under Section 1060 of the Code) shall be allocated among the Purchased Assets in accordance with Schedule ___ (the 'Allocation Schedule'). The parties shall file all Tax Returns (including IRS Form 8594) consistent with the Allocation Schedule. All transfer, sales, use, and similar Taxes arising in connection with the Transaction shall be borne 50% by Buyer and 50% by Seller.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-employee-matters",
+    "category": "Employee Matters",
+    "description": "Which employees transfer (offered employment by buyer), benefits comparability, accrued PTO, WARN Act, retention plans.",
+    "example_text": "Not less than 10 Business Days prior to the Closing, Buyer shall offer employment, effective as of the Closing, to those employees of Seller listed on Schedule ___ (each, a 'Transferred Employee'), on terms providing (i) base salary or wage rate no less favorable than such employee's current rate, and (ii) employee benefits substantially comparable in the aggregate to those provided by Seller. Seller shall be responsible for all WARN Act notices required as a result of the Closing.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-counterparts",
+    "category": "Counterparts & Electronic Signature",
+    "description": "Permits execution in counterparts and by electronic means (PDF, DocuSign).",
+    "example_text": "This Agreement may be executed in counterparts, each of which shall be deemed an original, and all of which together shall constitute one and the same instrument. Counterparts may be delivered by electronic transmission (including DocuSign or PDF), and each such counterpart shall be deemed an original.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-public-announcement",
+    "category": "Public Announcement",
+    "description": "Coordination of press releases and external communications; carve-outs for legally required disclosures.",
+    "example_text": "No party shall issue any press release or make any public announcement relating to the subject matter of this Agreement without the prior written consent of the other parties; provided, however, that any party may make any public disclosure it believes in good faith is required by applicable Law or stock exchange rule (in which case the disclosing party shall use reasonable efforts to consult with the other party in advance).",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-ordinary-course",
+    "category": "Ordinary-Course Covenant",
+    "description": "Seller's obligation to operate normally between signing and closing, plus a schedule of prohibited actions (no acquisitions, no material contracts, no comp changes, no asset sales outside ordinary course).",
+    "example_text": "From the date hereof until the Closing, Seller shall (a) conduct the Business in the ordinary course consistent with past practice, and (b) not, without the prior written consent of Buyer (not to be unreasonably withheld), (i) sell, lease, license or otherwise dispose of any material asset outside the ordinary course, (ii) enter into any new Material Contract or amend any existing Material Contract, (iii) increase the compensation of any officer or employee other than in the ordinary course, (iv) make any acquisition of another business, (v) incur any Indebtedness in excess of $___, or (vi) declare any extraordinary dividend.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-regulatory-efforts",
+    "category": "Regulatory Cooperation & Efforts Standard",
+    "description": "Parties' obligation to obtain antitrust and other regulatory approvals. Efforts standard ranges from 'reasonable best efforts' through 'commercially reasonable efforts' to 'hell-or-high-water' — which dictates whether buyer must divest assets to clear antitrust.",
+    "example_text": "Each party shall use its reasonable best efforts to (i) make all filings required under the HSR Act and any other Antitrust Laws as promptly as practicable, (ii) supply any additional information requested by any Governmental Authority, and (iii) cause the expiration or termination of any applicable waiting period. Notwithstanding the foregoing, Buyer shall not be required to (x) divest any of its existing businesses, or (y) accept any Order restricting the conduct of the Business in a manner that would reasonably be expected to result in a material adverse effect on the Business taken as a whole following the Closing.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-financing-covenant",
+    "category": "Financing Covenant",
+    "description": "Buyer's obligation to secure financing if any portion of the price is to be financed; relevant when no financing-out is negotiated and the buyer is committed regardless.",
+    "example_text": "Buyer shall use its reasonable best efforts to obtain the Debt Financing on the terms and conditions described in the Debt Commitment Letter. Buyer shall not, without Seller's prior written consent, (a) permit any amendment to the Debt Commitment Letter that would reasonably be expected to delay or prevent the Closing, or (b) terminate the Debt Commitment Letter unless Buyer obtains alternative financing on substantially equivalent terms.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-tsa",
+    "category": "Transition Services Agreement Scope",
+    "description": "Seller provides defined services (IT, payroll, accounting, customer support) to buyer for a transition period at cost-plus or cost-only pricing, with extension options.",
+    "example_text": "Seller shall provide to Buyer the services described in Schedule A (the 'Services') for the period set forth therein (the 'Service Period'), which shall not exceed twelve (12) months. Buyer shall pay Seller the fees set forth in Schedule A. Buyer may terminate any Service upon 30 days' prior written notice. Seller shall provide the Services with substantially the same degree of care and quality as it provided such services to the Business immediately prior to the Closing.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-escrow-release",
+    "category": "Escrow Release Mechanics",
+    "description": "How and when amounts in the indemnity (and any separate adjustment) escrow are released to seller or buyer.",
+    "example_text": "On the date that is 18 months after the Closing Date (the 'Release Date'), the Escrow Agent shall release to Seller the remaining balance of the Indemnity Escrow Amount, less the aggregate amount of any Claim Notices delivered on or prior to the Release Date and not yet resolved. Following resolution of any such pending claim, the Escrow Agent shall release to the appropriate party the amount specified in a joint written instruction from Buyer and Seller.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-firpta",
+    "category": "FIRPTA Certificate",
+    "description": "U.S. tax certification that seller is not a foreign person, allowing buyer to avoid 15% withholding on amounts attributable to U.S. real property interests.",
+    "example_text": "At the Closing, Seller shall deliver to Buyer a certificate, dated as of the Closing Date and in the form required by Treasury Regulations Section 1.1445-2(b)(2), certifying that Seller is not a 'foreign person' within the meaning of Section 1445 of the Code.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-wc-adjustment",
+    "category": "Working-Capital Adjustment Mechanics",
+    "description": "Post-closing true-up of net working capital against a target, with dispute escalation to an independent accountant.",
+    "example_text": "Within 90 days after the Closing, Buyer shall deliver to Seller a statement (the 'Closing Statement') setting forth Buyer's good-faith calculation of Closing Net Working Capital. Seller shall have 30 days to deliver a written notice of objection. The parties shall negotiate in good faith for 30 days to resolve any disputed items. Any remaining disputed items shall be submitted to an independent accounting firm of national reputation jointly selected by the parties, whose determination, based solely on the written submissions of the parties, shall be final, conclusive and binding. The fees of the independent accounting firm shall be allocated between the parties in proportion to the relative amounts of the disputed items determined in favor of each party.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-earnout-dispute",
+    "category": "Earnout Dispute Resolution",
+    "description": "Mechanism (typically similar to working-capital dispute) for resolving disagreements over earnout calculations.",
+    "example_text": "Within 60 days after the end of each Earnout Period, Buyer shall deliver to Seller a statement setting forth Buyer's calculation of the achievement of the Earnout Targets and the resulting Earnout Payment. Seller may dispute such statement by written notice within 30 days. Disputes shall be resolved in the manner provided in Section ___ (Working Capital Adjustment), mutatis mutandis.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-survival-schedule",
+    "category": "Survival Schedule",
+    "description": "Tabular treatment of how long each category of rep / covenant / indemnity survives the Closing.",
+    "example_text": "Survival. Except as set forth below, the representations and warranties of Seller contained in this Agreement shall survive the Closing until the date that is eighteen (18) months after the Closing Date. The Fundamental Representations (defined as those in Sections [Organization], [Authority], [Capitalization], [Title to Assets], and [Brokers]) shall survive until the sixth anniversary of the Closing. The Tax Representations shall survive until 60 days after the expiration of the applicable statute of limitations. All covenants requiring performance after the Closing shall survive in accordance with their terms.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-further-assurances",
+    "category": "Further Assurances",
+    "description": "Catch-all post-closing cooperation obligation, used to cure missed signatures, file recordations, etc.",
+    "example_text": "From time to time after the Closing, each party shall, at the reasonable request of any other party, execute and deliver such further instruments of conveyance, assignment, and transfer, and take such other action, as may be reasonably necessary to carry out the purposes and intent of this Agreement.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-books-records-access",
+    "category": "Books & Records Access",
+    "description": "Buyer's obligation to grant seller access to pre-closing books and records as needed for tax filings, audits, and litigation defense.",
+    "example_text": "For a period of seven (7) years after the Closing, Buyer shall (a) retain the books and records of the Business relating to periods prior to the Closing, and (b) afford Seller and its representatives, upon reasonable advance notice and during normal business hours, access to such books and records and to Buyer's personnel as may be reasonably required by Seller for purposes of preparing Tax Returns, responding to audits, or defending litigation.",
+    "source": "hand-authored"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "cuad-anti-assignment",
+    "category": "Anti-Assignment",
+    "contract_title": "STUB-MarketingAgreement.pdf",
+    "contract_type": "Marketing Agreement",
+    "excerpt": "Neither party may assign this Agreement, in whole or in part, without the prior written consent of the other party, and any purported assignment without such consent shall be null and void; provided, however, that either party may assign this Agreement to an Affiliate or to a successor in connection with a merger, consolidation, or sale of substantially all of its assets to which this Agreement relates.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-change-of-control",
+    "category": "Change Of Control",
+    "contract_title": "STUB-SupplyAgreement.pdf",
+    "contract_type": "Supply Agreement",
+    "excerpt": "In the event of a Change of Control of Supplier (defined as any transaction or series of related transactions resulting in any Person or group acquiring beneficial ownership of more than 50% of the voting securities of Supplier), Customer may, upon 30 days' written notice, terminate this Agreement without further liability.",
+    "source": "cuad"
+  },
+  {
+    "id": "cuad-mfn",
+    "category": "Most Favored Nation",
+    "contract_title": "STUB-DistributionAgreement.pdf",
+    "contract_type": "Distribution Agreement",
+    "excerpt": "If, during the term of this Agreement, Supplier offers any other distributor more favorable pricing terms for substantially similar volumes of the Products, Supplier shall promptly notify Distributor and shall make such more favorable terms available to Distributor for the remainder of the term.",
+    "source": "cuad"
+  }
+]
