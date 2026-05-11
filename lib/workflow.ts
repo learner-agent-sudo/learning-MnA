@@ -53,7 +53,7 @@ export const STAGES: Stage[] = [
       beginner:
         'Before any deal exists, the buyer decides why it wants to acquire something and the seller decides why it wants to sell. No documents are signed with a counterparty yet — this stage is internal.',
       practitioner:
-        'Buy-side: investment thesis, target screen, valuation range, financing plan, board approval to pursue. Sell-side: sale rationale, process design (auction vs. bilateral), banker engagement, vendor due diligence prep.',
+        '[[Buy-side|Buy-side / sell-side]]: investment thesis, target screen, valuation range, financing plan, board approval to pursue. [[Sell-side|Buy-side / sell-side]]: sale rationale, process design (auction vs. bilateral), banker engagement, vendor due diligence prep.',
     },
     documents: [
       { name: 'Internal investment memo / board deck' },
@@ -81,7 +81,7 @@ export const STAGES: Stage[] = [
       beginner:
         'Before the seller shares sensitive information, both sides sign a Non-Disclosure Agreement promising not to leak it or use it for anything other than evaluating the deal.',
       practitioner:
-        'One-way or mutual NDA. Key negotiation points: definition of confidential information, term, permitted uses, non-solicitation of employees, standstill (in public-target contexts), residuals carve-out, return/destruction obligations, governing law.',
+        'One-way or mutual NDA. Key negotiation points: definition of confidential information, term, permitted uses, non-solicitation of employees, [[standstill|Standstill]] (in public-target contexts), [[residuals|Residuals]] carve-out, return/destruction obligations, governing law.',
     },
     documents: [{ name: 'Non-Disclosure Agreement (NDA)' }],
     clauses: [
@@ -107,7 +107,7 @@ export const STAGES: Stage[] = [
       beginner:
         'The two sides write down the headline deal terms — price, structure, timeline, exclusivity — in a short document that is mostly non-binding. This is the first time the deal becomes "real". Structure is chosen here: asset (APA), stock (SPA), or merger.',
       practitioner:
-        'Letter of intent sets price/range, consideration mix (cash/stock/earnout), structure, key conditions, exclusivity (no-shop), expense responsibility. Typically non-binding except for exclusivity, confidentiality, expenses, governing law, and termination. Structure choice drives the rest of the workflow.',
+        'Letter of intent sets price/range, consideration mix (cash/stock/[[earnout|Earnout]]), structure, key conditions, exclusivity ([[no-shop|No-shop / no-talk]]), expense responsibility. Typically non-binding except for exclusivity, confidentiality, expenses, governing law, and termination. Structure choice drives the rest of the workflow.',
     },
     documents: [
       { name: 'Letter of Intent (LOI) / Term Sheet' },
@@ -137,7 +137,7 @@ export const STAGES: Stage[] = [
       beginner:
         "Buyer's lawyers, accountants, and specialists pore over the seller's documents to confirm the business is what the seller says it is, and to find risks that should change the price or the contract terms.",
       practitioner:
-        'Workstreams: legal (corporate, contracts, litigation, IP, employment, regulatory, real estate, environmental), financial (Quality of Earnings), tax, commercial, technical/IT, HR, ESG. Output: DD reports with risk flags that flow into APA reps, indemnities, and closing conditions. DD is one node in v1; sub-streams are a v2 enhancement.',
+        'Workstreams: legal (corporate, contracts, litigation, IP, employment, regulatory, real estate, environmental), financial ([[Quality of Earnings|QoE]]), tax, commercial, technical/IT, HR, ESG. Output: DD reports with risk flags that flow into APA reps, indemnities, and closing conditions. DD is one node in v1; sub-streams are a v2 enhancement.',
     },
     documents: [
       { name: 'Data room index' },
@@ -176,7 +176,7 @@ export const STAGES: Stage[] = [
       beginner:
         'The lawyers write the long contract — the Asset Purchase Agreement — that says exactly which assets and liabilities transfer, for what price, and what happens if something goes wrong.',
       practitioner:
-        "Buyer's counsel typically drafts first. The APA contains: definitions, purchase/sale of assets and assumed liabilities, purchase price + adjustments, closing mechanics, reps and warranties, pre-closing covenants, conditions to closing, termination, indemnification. Negotiation focuses on R&W scope, indemnity caps/baskets/survival, MAC definition, and purchase-price adjustment.",
+        "Buyer's counsel typically drafts first. The APA contains: definitions, purchase/sale of assets and assumed liabilities, purchase price + adjustments, closing mechanics, [[reps and warranties|Reps and warranties]], pre-closing covenants, conditions to closing, termination, indemnification. Negotiation focuses on R&W scope, indemnity [[caps/baskets/survival|Basket / cap / survival]], [[MAC|MAC / MAE]] definition, and purchase-price adjustment.",
     },
     documents: [
       { name: 'Asset Purchase Agreement (APA)' },
@@ -225,7 +225,7 @@ export const STAGES: Stage[] = [
     dealTypes: ['apa', 'spa', 'merger'],
     description: {
       beginner:
-        "Both sides sign the APA. In many deals, signing and closing are not the same day — there's a gap to get regulatory approvals and third-party consents.",
+        "Both sides sign the APA. In many deals, [[signing and closing|Signing vs. closing]] are not the same day — there's a gap to get regulatory approvals and third-party consents.",
       practitioner:
         'Authority confirmed via board / member / shareholder resolutions. Signature pages exchanged, often via DocuSign with a release email. 8-K filed if buyer is U.S. public. Public announcement coordinated. Ancillaries are typically signed at closing, not signing, but attached as forms.',
     },
@@ -254,7 +254,7 @@ export const STAGES: Stage[] = [
       beginner:
         'Between signing and closing, both sides have homework. The buyer files antitrust paperwork, the seller chases consents from key customers and lenders, and the seller has to keep running the business "normally" — no big changes.',
       practitioner:
-        'HSR filing (if thresholds met) with 30-day waiting period; foreign merger filings; CFIUS where applicable. Third-party consents: landlords, key customers, lenders. Seller operates per ordinary-course covenant. Buyer arranges financing draw. Bring-down certificates prepared.',
+        '[[HSR]] filing (if thresholds met) with 30-day waiting period; foreign merger filings; [[CFIUS]] where applicable. Third-party consents: landlords, key customers, lenders. Seller operates per ordinary-course covenant. Buyer arranges financing draw. Bring-down certificates prepared.',
     },
     documents: [
       { name: 'HSR filing (Hart-Scott-Rodino)' },
@@ -288,7 +288,7 @@ export const STAGES: Stage[] = [
       beginner:
         'The day the deal actually happens. Money moves, ownership of the assets transfers, and a stack of ancillary documents gets signed.',
       practitioner:
-        'Mechanical execution of the APA: deliveries on each side per the closing checklist, funds flow per the funds-flow memo, title to assets passes via bill of sale and assignment instruments, IP transfers via IP assignments (recorded post-close), key employees onboard, parties exchange bring-down certificates.',
+        'Mechanical execution of the APA: deliveries on each side per the closing checklist, [[funds flow|Funds flow]] per the funds-flow memo, title to assets passes via [[bill of sale|Bill of sale]] and assignment instruments, IP transfers via IP assignments (recorded post-close), key employees onboard, parties exchange bring-down certificates.',
     },
     documents: [
       { name: 'Bill of Sale' },
@@ -327,9 +327,9 @@ export const STAGES: Stage[] = [
     dealTypes: ['apa', 'spa', 'merger'],
     description: {
       beginner:
-        "The deal isn't over at closing. There's a price true-up a few months later, an indemnification window where the buyer can claim back money for problems it discovers, and the messy work of integrating the acquired business.",
+        "The deal isn't over at closing. There's a price [[true-up|True-up]] a few months later, an indemnification window where the buyer can claim back money for problems it discovers, and the messy work of integrating the acquired business.",
       practitioner:
-        "Working-capital true-up: buyer's post-close statement, seller dispute window, accountant resolution, escrow release. Indemnification under R&W survival (general 12–24 months; fundamental reps longer; tax until SOL; fraud carve-out). Earnout measurement and disputes. Integration of systems, payroll, branding, customer comms. Post-closing covenants: non-compete, non-solicit, further-assurances, books and records access.",
+        "Working-capital [[true-up|True-up]]: buyer's post-close statement, seller dispute window, accountant resolution, escrow release. Indemnification under R&W [[survival|Survival]] (general 12–24 months; fundamental reps longer; tax until SOL; fraud carve-out). [[Earnout]] measurement and disputes. Integration of systems, payroll, branding, customer comms. Post-closing covenants: non-compete, non-solicit, [[further-assurances|Further assurances]], books and records access.",
     },
     documents: [
       { name: 'Post-closing working capital statement' },

@@ -2,6 +2,7 @@ import { Depth, Stage } from '@/lib/workflow';
 import { ClauseCard } from './ClauseCard';
 import { DocumentList } from './DocumentList';
 import { GlossaryTooltip } from './GlossaryTooltip';
+import { RichText } from './RichText';
 
 interface Props {
   stage: Stage;
@@ -27,7 +28,9 @@ export function StagePanel({ stage, depth }: Props) {
         <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">
           What happens
         </h3>
-        <p className="mt-2 text-sm leading-relaxed">{stage.description[depth]}</p>
+        <p className="mt-2 text-sm leading-relaxed">
+          <RichText text={stage.description[depth]} />
+        </p>
       </section>
 
       <DocumentList documents={stage.documents} />
