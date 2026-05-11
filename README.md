@@ -43,7 +43,24 @@ on the site is excerpted from the public CUAD dataset (CC BY 4.0) or
 hand-authored as illustrative examples. Real transactions involve
 jurisdiction-specific drafting and counsel.
 
-## Status
+## Local development
 
-Pre-implementation. The kickoff prompt for the build session is in
-`PROMPT.md`.
+```bash
+npm install
+npm run dev          # http://localhost:3000
+npm run build        # static export to ./out/
+```
+
+## Populating CUAD clauses
+
+`public/clauses.json` ships with a 3-entry stub. To replace it with real
+CUAD excerpts (~16 categories × up to 3 examples each):
+
+```bash
+pip install datasets
+python scripts/extract_cuad.py
+```
+
+The script downloads `theatticusproject/cuad-qa` from Hugging Face and
+writes deduped excerpts to `public/clauses.json`. It needs network access
+to `huggingface.co`; run it on a machine that can reach the Hub.
