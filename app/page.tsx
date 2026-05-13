@@ -54,7 +54,21 @@ export default function Page() {
             enabledStageIds={enabledStageIds}
             onSelectStage={setSelectedStageId}
           />
-          <p className="mt-3 text-xs text-muted">
+          <div className="mt-3 flex flex-wrap items-center gap-3 text-xs text-muted">
+            <span className="inline-flex items-center gap-1.5">
+              <span className="inline-block h-2.5 w-2.5 rounded-sm border border-[#93c5fd] bg-[#eff6ff]" />
+              Pre-deal
+            </span>
+            <span className="inline-flex items-center gap-1.5">
+              <span className="inline-block h-2.5 w-2.5 rounded-sm border border-[#fcd34d] bg-[#fffbeb]" />
+              Active deal
+            </span>
+            <span className="inline-flex items-center gap-1.5">
+              <span className="inline-block h-2.5 w-2.5 rounded-sm border border-[#6ee7b7] bg-[#ecfdf5]" />
+              Post-deal
+            </span>
+          </div>
+          <p className="mt-2 text-xs text-muted">
             Click any stage for documents, clauses, and glossary. SPA and
             Merger paths are coming soon — APA is the only complete deal
             type in v1.

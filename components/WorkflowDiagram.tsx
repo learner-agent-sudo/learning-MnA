@@ -24,19 +24,31 @@ mermaid.initialize({
   },
 });
 
+function phaseFor(index: number): 'pre' | 'active' | 'post' {
+  if (index <= 3) return 'pre';
+  if (index <= 6) return 'active';
+  return 'post';
+}
+
 function buildSpec(stages: Stage[]): string {
   const lines: string[] = ['flowchart TD'];
   for (const s of stages) {
-    const shape = `["${s.title}"]`;
-    lines.push(`  ${s.id}${shape}`);
+    lines.push(`  ${s.id}["${s.title}"]`);
   }
   for (let i = 0; i < stages.length - 1; i++) {
     lines.push(`  ${stages[i].id} --> ${stages[i + 1].id}`);
   }
-  // pre-process styling for strategy
+  lines.push('  classDef phasePre fill:#eff6ff,stroke:#93c5fd,color:#0f172a');
+  lines.push('  classDef phaseActive fill:#fffbeb,stroke:#fcd34d,color:#0f172a');
+  lines.push('  classDef phasePost fill:#ecfdf5,stroke:#6ee7b7,color:#0f172a');
   lines.push('  classDef preProcess stroke-dasharray: 5 5');
-  const pre = stages.filter((s) => s.kind === 'pre-process').map((s) => s.id);
-  if (pre.length) lines.push(`  class ${pre.join(',')} preProcess`);
+  const groups: Record<string, string[]> = { pre: [], active: [], post: [] };
+  for (const s of stages) groups[phaseFor(s.index)].push(s.id);
+  if (groups.pre.length) lines.push(`  class ${groups.pre.join(',')} phasePre`);
+  if (groups.active.length) lines.push(`  class ${groups.active.join(',')} phaseActive`);
+  if (groups.post.length) lines.push(`  class ${groups.post.join(',')} phasePost`);
+  const dashed = stages.filter((s) => s.kind === 'pre-process').map((s) => s.id);
+  if (dashed.length) lines.push(`  class ${dashed.join(',')} preProcess`);
   return lines.join('\n');
 }
 
@@ -114,7 +126,7 @@ function wireUp(
       const shape = node.querySelector<SVGElement>('rect, polygon, path');
       if (shape) {
         shape.setAttribute('stroke', '#2563eb');
-        shape.setAttribute('stroke-width', '2.5');
+        shape.setAttribute('stroke-width', '3');
       }
     }
   }
