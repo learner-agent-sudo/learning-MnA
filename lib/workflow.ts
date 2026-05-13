@@ -87,8 +87,11 @@ export const STAGES: Stage[] = [
     clauses: [
       cuad('cuad-governing-law-nda', 'Governing Law'),
       cuad('cuad-no-solicit-employees-nda', 'No-Solicit Of Employees'),
-      cuad('cuad-non-disparagement-nda', 'Non-Disparagement'),
-      cuad('cuad-cap-liability-nda', 'Cap On Liability'),
+      gf('gf-nda-confidential-info', 'Definition of Confidential Information'),
+      gf('gf-nda-permitted-use', 'Permitted Use'),
+      gf('gf-nda-term-survival', 'Term & Survival'),
+      gf('gf-nda-return-destruction', 'Return or Destruction'),
+      gf('gf-nda-equitable-relief', 'Equitable Relief'),
       gf('gf-standstill', 'Standstill'),
       gf('gf-residuals', 'Residuals Carve-Out'),
     ],

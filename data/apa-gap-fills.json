@@ -1,5 +1,40 @@
 [
   {
+    "id": "gf-nda-confidential-info",
+    "category": "Definition of Confidential Information",
+    "description": "The heart of an NDA. Defines what counts as protected information — typically a broad catch-all plus enumerated examples, sometimes restricted to information marked 'Confidential.' Carve-outs follow for information already public, independently developed, or rightfully obtained from a third party.",
+    "example_text": "'Confidential Information' means all non-public information disclosed by or on behalf of Disclosing Party to Receiving Party, whether orally, in writing, electronically, or by inspection of tangible objects, that is (a) designated as confidential at the time of disclosure, (b) marked 'Confidential' or 'Proprietary', or (c) of a nature that a reasonable person would understand to be confidential given the circumstances of disclosure. Confidential Information includes, without limitation, business plans, financial information, customer and supplier lists, technical data, product designs, and the existence and status of discussions between the parties. Confidential Information does not include information that (i) is or becomes generally available to the public other than through breach of this Agreement, (ii) was rightfully in Receiving Party's possession without restriction prior to disclosure, (iii) is independently developed by Receiving Party without use of Confidential Information, or (iv) is rightfully received from a third party without a duty of confidentiality.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-nda-permitted-use",
+    "category": "Permitted Use",
+    "description": "Restricts the receiving party to using confidential information only for evaluating and negotiating the potential transaction. Forbids competitive use, reverse engineering, and disclosure beyond a defined need-to-know circle.",
+    "example_text": "Receiving Party shall use Confidential Information solely for the purpose of evaluating, negotiating, and consummating a potential transaction between the parties (the 'Purpose') and for no other purpose. Receiving Party shall not (a) use any Confidential Information for its own benefit or for the benefit of any third party, (b) reverse engineer, decompile, or disassemble any Confidential Information, or (c) disclose any Confidential Information to any person other than its directors, officers, employees, and advisors who have a need to know for the Purpose and are bound by written confidentiality obligations no less protective than those set forth herein (collectively, 'Representatives'). Receiving Party shall be responsible for any breach of this Agreement by its Representatives.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-nda-term-survival",
+    "category": "Term & Survival",
+    "description": "Two clocks: how long the NDA itself is in effect (e.g., two years from signing) and how long confidentiality obligations survive after that (often longer, sometimes 'so long as the information remains confidential').",
+    "example_text": "This Agreement shall commence on the Effective Date and continue for a period of two (2) years thereafter (the 'Term'), unless earlier terminated by mutual written agreement. Notwithstanding any expiration or termination, Receiving Party's obligations with respect to Confidential Information shall survive for the longer of (i) three (3) years from the date of the relevant disclosure, or (ii) for so long as such Confidential Information remains a trade secret under applicable law.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-nda-return-destruction",
+    "category": "Return or Destruction",
+    "description": "On request or after discussions end, the receiving party must return or destroy the confidential materials and certify destruction in writing. Typical carve-out: backups and legal-hold copies may remain, subject to ongoing confidentiality.",
+    "example_text": "Upon the written request of Disclosing Party, or upon termination of discussions between the parties regarding the Purpose, Receiving Party shall, at Disclosing Party's election, promptly (and in any event within thirty (30) days) return or destroy all Confidential Information in its possession or control, including all copies, summaries, analyses, and extracts thereof, and shall certify such return or destruction in writing by a duly authorized officer. Notwithstanding the foregoing, Receiving Party may retain (a) one archival copy in its legal files solely to evidence compliance with this Agreement, and (b) copies created pursuant to bona fide automated backup procedures or applicable record-retention policies, in each case subject to continued confidentiality obligations until destroyed in the ordinary course.",
+    "source": "hand-authored"
+  },
+  {
+    "id": "gf-nda-equitable-relief",
+    "category": "Equitable Relief",
+    "description": "Acknowledges that monetary damages are inadequate for a leak and lets the disclosing party seek injunctions without proving damages or posting bond. The reason NDAs typically don't have a liability cap — the disclosing party wants the courthouse door wide open.",
+    "example_text": "Receiving Party acknowledges that any breach or threatened breach of this Agreement may cause Disclosing Party irreparable harm for which monetary damages would be an inadequate remedy. Accordingly, Disclosing Party shall be entitled to seek injunctive, specific performance, and other equitable relief in any court of competent jurisdiction, without the requirement of posting any bond or proving actual damages, in addition to all other remedies available at law or in equity.",
+    "source": "hand-authored"
+  },
+  {
     "id": "gf-engagement-fee",
     "category": "Banker Fee Structure & Tail",
     "description": "Compensation for the financial advisor: retainer, success fee (often as % of transaction value, sometimes with progressive scale), tail period during which a fee is owed if the client closes with a prior introduction.",
