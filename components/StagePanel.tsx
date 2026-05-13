@@ -27,7 +27,7 @@ export function StagePanel({ stage, depth, prev, next, onNavigate }: Props) {
   const gapFills = stage.clauses.filter((c) => c.provenance === 'hand-authored');
 
   return (
-    <aside className="rounded-lg border border-slate-200 bg-panel p-6">
+    <aside className="rounded-lg border border-slate-200 bg-panel p-4 sm:p-6">
       <header className="border-b border-slate-200 pb-4">
         <div className="flex items-center justify-between gap-3">
           <div>

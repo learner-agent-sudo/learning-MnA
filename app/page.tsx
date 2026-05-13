@@ -31,11 +31,11 @@ export default function Page() {
     : null;
 
   return (
-    <main className="mx-auto max-w-6xl px-6 py-8">
+    <main className="mx-auto max-w-6xl px-4 py-6 sm:px-6 sm:py-8">
       <header className="flex flex-wrap items-end justify-between gap-4 border-b border-slate-200 pb-4">
         <div>
-          <h1 className="text-2xl font-semibold">Learning M&amp;A</h1>
-          <p className="mt-1 text-sm text-muted">
+          <h1 className="text-xl font-semibold sm:text-2xl">Learning M&amp;A</h1>
+          <p className="mt-1 text-xs text-muted sm:text-sm">
             Interactive walkthrough of a U.S. private-company Asset Purchase Agreement.
           </p>
         </div>

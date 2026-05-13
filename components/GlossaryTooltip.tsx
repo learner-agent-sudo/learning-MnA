@@ -30,7 +30,7 @@ export function GlossaryTooltip({ term, children }: Props) {
         <span
           role="tooltip"
           id={id}
-          className="absolute left-0 top-full z-10 mt-1 w-64 rounded border border-slate-200 bg-white p-2 text-xs text-ink shadow-md"
+          className="absolute left-0 top-full z-10 mt-1 w-64 max-w-[calc(100vw-2rem)] rounded border border-slate-200 bg-white p-2 text-xs text-ink shadow-md"
         >
           <strong className="block">{term}</strong>
           <span className="block text-muted">{definition}</span>
