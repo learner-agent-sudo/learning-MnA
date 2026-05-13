@@ -24,6 +24,11 @@ export default function Page() {
   );
 
   const selected = selectedStageId ? STAGE_BY_ID[selectedStageId] : null;
+  const selectedIdx = selected ? stages.findIndex((s) => s.id === selected.id) : -1;
+  const prevStage = selectedIdx > 0 ? stages[selectedIdx - 1] : null;
+  const nextStage = selectedIdx >= 0 && selectedIdx < stages.length - 1
+    ? stages[selectedIdx + 1]
+    : null;
 
   return (
     <main className="mx-auto max-w-6xl px-6 py-8">
@@ -77,7 +82,13 @@ export default function Page() {
 
         <section>
           {selected ? (
-            <StagePanel stage={selected} depth={depth} />
+            <StagePanel
+              stage={selected}
+              depth={depth}
+              prev={prevStage}
+              next={nextStage}
+              onNavigate={setSelectedStageId}
+            />
           ) : (
             <div className="rounded-lg border border-dashed border-slate-300 p-8 text-center text-muted">
               Click a stage in the diagram to open its details.
