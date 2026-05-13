@@ -69,11 +69,30 @@ export function StagePanel({ stage, depth, prev, next, onNavigate }: Props) {
           <h3 className="text-sm font-semibold uppercase tracking-wide text-muted">
             Clauses
           </h3>
-          <div className="mt-3 grid gap-3">
-            {[...cuad, ...gapFills].map((c) => (
-              <ClauseCard key={c.id} clause={c} />
-            ))}
-          </div>
+          {cuad.length > 0 && (
+            <div className="mt-3">
+              <div className="text-xs font-medium text-blue-700">
+                From real contracts (CUAD) · {cuad.length}
+              </div>
+              <div className="mt-2 grid gap-3">
+                {cuad.map((c) => (
+                  <ClauseCard key={c.id} clause={c} />
+                ))}
+              </div>
+            </div>
+          )}
+          {gapFills.length > 0 && (
+            <div className="mt-4">
+              <div className="text-xs font-medium text-amber-700">
+                APA-specific drafting (hand-authored) · {gapFills.length}
+              </div>
+              <div className="mt-2 grid gap-3">
+                {gapFills.map((c) => (
+                  <ClauseCard key={c.id} clause={c} />
+                ))}
+              </div>
+            </div>
+          )}
         </section>
       )}
 
