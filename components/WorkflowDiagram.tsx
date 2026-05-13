@@ -85,7 +85,19 @@ export function WorkflowDiagram({
       className="mermaid-host overflow-x-auto rounded-lg border border-slate-200 bg-white p-4"
       role="img"
       aria-label="M&A workflow diagram"
-    />
+    >
+      <div
+        className="mx-auto flex w-40 animate-pulse flex-col items-center gap-3 py-2"
+        aria-hidden
+      >
+        {Array.from({ length: stages.length }).map((_, i) => (
+          <div key={i} className="flex flex-col items-center gap-2">
+            <div className="h-7 w-40 rounded bg-slate-100" />
+            {i < stages.length - 1 && <div className="h-3 w-px bg-slate-200" />}
+          </div>
+        ))}
+      </div>
+    </div>
   );
 }
 
