@@ -12,6 +12,16 @@ interface Props {
   onNavigate?: (id: string) => void;
 }
 
+function SummaryChip({ count, label }: { count: number; label: string }) {
+  if (count === 0) return null;
+  return (
+    <span className="inline-flex items-center gap-1 rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-600">
+      <span className="font-semibold text-ink">{count}</span>
+      {label}
+    </span>
+  );
+}
+
 export function StagePanel({ stage, depth, prev, next, onNavigate }: Props) {
   const cuad = stage.clauses.filter((c) => c.provenance === 'cuad');
   const gapFills = stage.clauses.filter((c) => c.provenance === 'hand-authored');
@@ -27,6 +37,11 @@ export function StagePanel({ stage, depth, prev, next, onNavigate }: Props) {
               {stage.kind === 'branch' && ' · branch'}
             </div>
             <h2 className="mt-1 text-xl font-semibold">{stage.title}</h2>
+            <div className="mt-2 flex flex-wrap gap-1.5">
+              <SummaryChip count={stage.documents.length} label="documents" />
+              <SummaryChip count={stage.clauses.length} label="clauses" />
+              <SummaryChip count={stage.glossary.length} label="terms" />
+            </div>
           </div>
           {onNavigate && (
             <nav className="flex shrink-0 gap-1" aria-label="Stage navigation">
