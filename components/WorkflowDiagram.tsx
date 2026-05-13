@@ -89,21 +89,27 @@ function wireUp(
   svg.style.maxWidth = '100%';
   svg.style.height = 'auto';
 
-  for (const s of stages) {
-    // Mermaid wraps each node in a <g> whose id contains the node id.
-    const node = svg.querySelector<SVGGElement>(`g[id^="flowchart-${s.id}-"]`);
-    if (!node) continue;
-    const enabled = enabledIds.has(s.id);
-    const selected = selectedId === s.id;
+  // Build a title -> stage map for matching nodes by their rendered text.
+  const byTitle = new Map<string, Stage>();
+  for (const s of stages) byTitle.set(s.title.trim().toLowerCase(), s);
+
+  const nodes = svg.querySelectorAll<SVGGElement>('g.node');
+  for (const node of Array.from(nodes)) {
+    const text = (node.textContent || '').trim().toLowerCase();
+    const stage = byTitle.get(text);
+    if (!stage) continue;
+    node.dataset.stageId = stage.id;
+
+    const enabled = enabledIds.has(stage.id);
+    const selected = selectedId === stage.id;
     node.style.cursor = enabled ? 'pointer' : 'not-allowed';
+    node.style.opacity = enabled ? '1' : '0.4';
     node.setAttribute('tabindex', enabled ? '0' : '-1');
     node.setAttribute('role', 'button');
-    node.setAttribute('aria-label', `${s.title}${enabled ? '' : ' (coming soon)'}`);
-    if (!enabled) {
-      node.style.opacity = '0.4';
-    } else {
-      node.style.opacity = '1';
-    }
+    node.setAttribute(
+      'aria-label',
+      `${stage.title}${enabled ? '' : ' (coming soon)'}`
+    );
     if (selected) {
       const shape = node.querySelector<SVGElement>('rect, polygon, path');
       if (shape) {
@@ -111,15 +117,26 @@ function wireUp(
         shape.setAttribute('stroke-width', '2.5');
       }
     }
-    if (enabled) {
-      node.addEventListener('click', () => onSelect(s.id));
-      node.addEventListener('keydown', (e: Event) => {
-        const ke = e as KeyboardEvent;
-        if (ke.key === 'Enter' || ke.key === ' ') {
-          ke.preventDefault();
-          onSelect(s.id);
-        }
-      });
-    }
   }
+
+  // Single delegated click handler on the SVG root.
+  const handleClick = (e: Event) => {
+    const target = e.target as Element | null;
+    const nodeEl = target?.closest('g.node') as SVGGElement | null;
+    const id = nodeEl?.dataset.stageId;
+    if (id && enabledIds.has(id)) onSelect(id);
+  };
+  const handleKey = (e: Event) => {
+    const ke = e as KeyboardEvent;
+    if (ke.key !== 'Enter' && ke.key !== ' ') return;
+    const target = ke.target as Element | null;
+    const nodeEl = target?.closest('g.node') as SVGGElement | null;
+    const id = nodeEl?.dataset.stageId;
+    if (id && enabledIds.has(id)) {
+      ke.preventDefault();
+      onSelect(id);
+    }
+  };
+  svg.addEventListener('click', handleClick);
+  svg.addEventListener('keydown', handleKey);
 }
