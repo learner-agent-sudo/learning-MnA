@@ -5,51 +5,55 @@ interface Props {
   clause: ClauseRef;
 }
 
+const CARD = 'rounded-md bg-white p-4 ring-1 ring-slate-200/70';
+const HEADER = 'flex items-start justify-between gap-2';
+const TITLE = 'text-sm font-semibold leading-snug';
+const PILL_BASE =
+  'shrink-0 rounded px-1.5 py-0.5 text-[9px] font-semibold uppercase tracking-wider';
+const DISCLOSURE =
+  'mt-2 inline-flex items-center gap-1 rounded border border-slate-200 bg-slate-50 px-2 py-1 text-xs font-medium text-ink hover:border-accent hover:text-accent';
+
 export function ClauseCard({ clause }: Props) {
   if (clause.provenance === 'cuad') {
-    const examples =
-      getCuadByCategory(clause.category).length > 0
-        ? getCuadByCategory(clause.category)
-        : [];
+    const examples = getCuadByCategory(clause.category);
     return (
-      <article className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-        <header className="flex items-center justify-between gap-2">
-          <h4 className="text-sm font-semibold">{clause.category}</h4>
+      <article className={CARD}>
+        <header className={HEADER}>
+          <h4 className={TITLE}>{clause.category}</h4>
           <ProvenancePill provenance="cuad" />
         </header>
         {examples.length === 0 ? (
           <p className="mt-2 text-xs italic text-muted">
-            CUAD excerpt not loaded yet (stub data). Will populate after running
-            scripts/extract_cuad.py.
+            CUAD excerpt not loaded yet for this category.
           </p>
         ) : (
-          <ul className="mt-3 space-y-3">
+          <ul className="mt-3 space-y-3.5">
             {examples.map((ex) => {
               const hasContext = !!(ex.context_before || ex.context_after);
               return (
                 <li key={ex.id} className="text-sm">
-                  <div className="text-xs text-muted">
+                  <div className="text-[11px] uppercase tracking-wide text-muted">
                     {ex.contract_type ?? 'Contract'} · {ex.contract_title}
                   </div>
-                  <blockquote className="mt-1 border-l-2 border-slate-200 pl-3 text-ink/90">
+                  <blockquote className="mt-1.5 border-l-2 border-blue-200 pl-3 text-ink/90">
                     {ex.excerpt}
                   </blockquote>
                   {hasContext && (
-                    <details className="mt-1">
-                      <summary className="cursor-pointer text-xs font-medium text-accent">
-                        Show in context
+                    <details className="group">
+                      <summary className={DISCLOSURE + ' list-none'}>
+                        <span className="transition group-open:rotate-90">▸</span>
+                        <span className="group-open:hidden">Show in context</span>
+                        <span className="hidden group-open:inline">Hide context</span>
                       </summary>
                       <div className="mt-2 whitespace-pre-wrap rounded bg-slate-50 p-3 text-xs leading-relaxed text-ink/80">
                         {ex.context_before && (
-                          <span className="text-muted">
-                            …{ex.context_before}
-                          </span>
+                          <span className="text-muted">…{ex.context_before}</span>
                         )}
-                        <mark className="bg-amber-100 px-0.5">{ex.excerpt}</mark>
+                        <mark className="rounded bg-amber-100 px-0.5">
+                          {ex.excerpt}
+                        </mark>
                         {ex.context_after && (
-                          <span className="text-muted">
-                            {ex.context_after}…
-                          </span>
+                          <span className="text-muted">{ex.context_after}…</span>
                         )}
                       </div>
                     </details>
@@ -66,23 +70,25 @@ export function ClauseCard({ clause }: Props) {
   const gf = getClause(clause.id);
   if (!gf || gf.source !== 'hand-authored') {
     return (
-      <article className="rounded-lg border border-amber-300 bg-amber-50 p-4 text-sm">
+      <article className="rounded-md bg-amber-50 p-4 text-sm ring-1 ring-amber-300">
         Missing gap-fill: <code>{clause.id}</code>
       </article>
     );
   }
   return (
-    <article className="rounded-lg border border-slate-200 bg-white p-4 shadow-sm">
-      <header className="flex items-center justify-between gap-2">
-        <h4 className="text-sm font-semibold">{gf.category}</h4>
+    <article className={CARD}>
+      <header className={HEADER}>
+        <h4 className={TITLE}>{gf.category}</h4>
         <ProvenancePill provenance="hand-authored" />
       </header>
-      <p className="mt-2 text-sm text-muted">{gf.description}</p>
-      <details className="mt-3">
-        <summary className="cursor-pointer text-xs font-medium text-accent">
-          Sample drafting
+      <p className="mt-2 text-sm leading-relaxed text-muted">{gf.description}</p>
+      <details className="group">
+        <summary className={DISCLOSURE + ' list-none'}>
+          <span className="transition group-open:rotate-90">▸</span>
+          <span className="group-open:hidden">Sample drafting</span>
+          <span className="hidden group-open:inline">Hide sample</span>
         </summary>
-        <blockquote className="mt-2 border-l-2 border-slate-200 pl-3 text-sm text-ink/90">
+        <blockquote className="mt-2 border-l-2 border-amber-200 pl-3 text-sm text-ink/90">
           {gf.example_text}
         </blockquote>
       </details>
@@ -95,10 +101,9 @@ function ProvenancePill({ provenance }: { provenance: 'cuad' | 'hand-authored' }
   return (
     <span
       className={
-        'shrink-0 rounded-full px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide ' +
-        (isCuad
-          ? 'bg-blue-100 text-blue-700'
-          : 'bg-amber-100 text-amber-800')
+        PILL_BASE +
+        ' ' +
+        (isCuad ? 'bg-blue-50 text-blue-700' : 'bg-amber-50 text-amber-800')
       }
       title={
         isCuad
@@ -106,7 +111,7 @@ function ProvenancePill({ provenance }: { provenance: 'cuad' | 'hand-authored' }
           : 'Hand-authored illustrative drafting — not legal advice.'
       }
     >
-      {isCuad ? 'CUAD' : 'Hand-authored'}
+      {isCuad ? 'CUAD' : 'Hand'}
     </span>
   );
 }
