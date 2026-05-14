@@ -85,15 +85,17 @@ export const STAGES: Stage[] = [
     },
     documents: [{ name: 'Non-Disclosure Agreement (NDA)' }],
     clauses: [
-      cuad('cuad-governing-law-nda', 'Governing Law'),
+      // CUAD group: operative → covenant → boilerplate
       cuad('cuad-no-solicit-employees-nda', 'No-Solicit Of Employees'),
+      cuad('cuad-governing-law-nda', 'Governing Law'),
+      // Hand-authored: definition → permitted use → standstill → residuals → term → return → remedies
       gf('gf-nda-confidential-info', 'Definition of Confidential Information'),
       gf('gf-nda-permitted-use', 'Permitted Use'),
+      gf('gf-standstill', 'Standstill'),
+      gf('gf-residuals', 'Residuals Carve-Out'),
       gf('gf-nda-term-survival', 'Term & Survival'),
       gf('gf-nda-return-destruction', 'Return or Destruction'),
       gf('gf-nda-equitable-relief', 'Equitable Relief'),
-      gf('gf-standstill', 'Standstill'),
-      gf('gf-residuals', 'Residuals Carve-Out'),
     ],
     glossary: [
       { term: 'Standstill', definition: "Buyer agrees not to make unsolicited offers for the target's stock for a period." },
@@ -117,8 +119,10 @@ export const STAGES: Stage[] = [
       { name: 'Process bid letter', description: 'Auction context only.' },
     ],
     clauses: [
+      // CUAD: covenant → boilerplate
       cuad('cuad-exclusivity-loi', 'Exclusivity'),
       cuad('cuad-governing-law-loi', 'Governing Law'),
+      // Hand-authored: binding split → price → conditions → expenses
       gf('gf-binding-split', 'Binding vs. Non-Binding Split'),
       gf('gf-headline-price', 'Headline Price & Consideration Mix'),
       gf('gf-conditions-to-definitive', 'Conditions to Definitive Agreement'),
@@ -151,16 +155,18 @@ export const STAGES: Stage[] = [
       { name: 'Disclosure schedule drafts' },
     ],
     clauses: [
-      cuad('cuad-change-of-control', 'Change Of Control'),
+      // Ordered by APA-buyer relevance: consent triggers first, then IP/license,
+      // then commercial restrictions, then operational rights.
       cuad('cuad-anti-assignment', 'Anti-Assignment'),
+      cuad('cuad-change-of-control', 'Change Of Control'),
+      cuad('cuad-ip-ownership-assignment', 'IP Ownership Assignment'),
+      cuad('cuad-license-grant', 'License Grant'),
       cuad('cuad-mfn', 'Most Favored Nation'),
-      cuad('cuad-exclusivity-dd', 'Exclusivity'),
       cuad('cuad-non-compete-dd', 'Non-Compete'),
+      cuad('cuad-exclusivity-dd', 'Exclusivity'),
       cuad('cuad-termination-convenience', 'Termination For Convenience'),
       cuad('cuad-audit-rights', 'Audit Rights'),
       cuad('cuad-insurance', 'Insurance'),
-      cuad('cuad-ip-ownership-assignment', 'IP Ownership Assignment'),
-      cuad('cuad-license-grant', 'License Grant'),
     ],
     glossary: [
       { term: 'Data room', definition: "Secure online repository of the seller's documents." },
@@ -188,14 +194,16 @@ export const STAGES: Stage[] = [
       { name: 'Form ancillaries', description: 'Bill of sale, A&A, IP assignment, TSA, employment, non-compete.' },
     ],
     clauses: [
-      cuad('cuad-governing-law-apa', 'Governing Law'),
-      cuad('cuad-anti-assignment-apa', 'Anti-Assignment'),
-      cuad('cuad-cap-liability-apa', 'Cap On Liability'),
-      cuad('cuad-insurance-apa', 'Insurance'),
+      // CUAD: transfer mechanics → restrictive covenants → boilerplate
       cuad('cuad-ip-ownership-apa', 'IP Ownership Assignment'),
       cuad('cuad-license-grant-apa', 'License Grant'),
       cuad('cuad-non-compete-apa', 'Non-Compete'),
       cuad('cuad-no-solicit-apa', 'No-Solicit Of Employees'),
+      cuad('cuad-insurance-apa', 'Insurance'),
+      cuad('cuad-anti-assignment-apa', 'Anti-Assignment'),
+      cuad('cuad-cap-liability-apa', 'Cap On Liability'),
+      cuad('cuad-governing-law-apa', 'Governing Law'),
+      // Hand-authored: operative → reps → covenants → conditions → indemnification → termination
       gf('gf-purchased-assets', 'Purchased Assets / Excluded Assets'),
       gf('gf-assumed-liabilities', 'Assumed Liabilities / Excluded Liabilities'),
       gf('gf-purchase-price', 'Purchase Price & Adjustment'),
@@ -204,12 +212,12 @@ export const STAGES: Stage[] = [
       gf('gf-reps-seller', 'Representations & Warranties (Seller)'),
       gf('gf-reps-buyer', 'Representations & Warranties (Buyer)'),
       gf('gf-pre-closing-covenants', 'Pre-Closing Covenants'),
-      gf('gf-conditions-to-closing', 'Conditions to Closing'),
-      gf('gf-indemnification', 'Indemnification'),
-      gf('gf-mac', 'Material Adverse Change (MAC)'),
-      gf('gf-termination-fee', 'Termination & Termination Fee'),
-      gf('gf-tax-matters', 'Tax Matters & §1060 Allocation'),
       gf('gf-employee-matters', 'Employee Matters'),
+      gf('gf-conditions-to-closing', 'Conditions to Closing'),
+      gf('gf-mac', 'Material Adverse Change (MAC)'),
+      gf('gf-indemnification', 'Indemnification'),
+      gf('gf-tax-matters', 'Tax Matters & §1060 Allocation'),
+      gf('gf-termination-fee', 'Termination & Termination Fee'),
     ],
     glossary: [
       { term: 'Reps and warranties', definition: 'Statements of fact each side stands behind in the contract.' },
