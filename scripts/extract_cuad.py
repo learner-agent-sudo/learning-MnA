@@ -123,13 +123,19 @@ def main() -> int:
     print("Loading chenghao/cuad_qa (parquet mirror of CUAD-QA) ...", file=sys.stderr)
     ds = load_dataset("chenghao/cuad_qa", split="train")
 
-    wanted = set(CUAD_CATEGORIES_WE_USE)
+    # Case-insensitive lookup: many CUAD category labels use unusual casing
+    # (e.g., "Ip Ownership Assignment"). Match flexibly, write canonical.
+    wanted_lc = {c.lower(): c for c in CUAD_CATEGORIES_WE_USE}
     by_cat: dict[str, list[dict]] = {}
 
     for row in ds:
-        category = extract_category(row["question"])
-        if category not in wanted:
+        raw_category = extract_category(row["question"])
+        if not raw_category:
             continue
+        canonical = wanted_lc.get(raw_category.lower())
+        if canonical is None:
+            continue
+        category = canonical
         answers_field = row.get("answers", {}) or {}
         answers = answers_field.get("text", []) or []
         starts = answers_field.get("answer_start", []) or []
@@ -167,7 +173,7 @@ def main() -> int:
                 if after.strip():
                     entry["context_after"] = after
             bucket.append(entry)
-        if all(len(by_cat.get(c, [])) >= MAX_PER_CATEGORY for c in wanted):
+        if all(len(by_cat.get(c, [])) >= MAX_PER_CATEGORY for c in CUAD_CATEGORIES_WE_USE):
             break
 
     out: list[dict] = []
